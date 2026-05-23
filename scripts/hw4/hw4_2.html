@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <style>
+        body { display: flex; font-family: Arial; }
+        #tabs { width: 150px; border-right: 1px solid #ccc; }
+        .tab { padding: 10px; cursor: pointer; border-bottom: 1px solid #eee; }
+        .tab.active { background: #f0f0f0; font-weight: bold; }
+        #content { padding: 20px; flex-grow: 1; }
+        .panel { display: none; }
+        .panel.active { display: block; }
+    </style>
+</head>
+<body>
+
+<div id="tabs">
+    <div class="tab active" data-target="tab1">Tab 1</div>
+    <div class="tab" data-target="tab2">Tab 2</div>
+    <div class="tab" data-target="tab3">Tab 3</div>
+</div>
+
+<div id="content">
+    <div id="tab1" class="panel active">Content of Tab 1</div>
+    <div id="tab2" class="panel">Content of Tab 2</div>
+    <div id="tab3" class="panel">Content of Tab 3</div>
+</div>
+
+<script src="./hw4.js"></script>
+</body>
+</html>
