@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація користувача</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        label { display: block; margin-top: 10px; }
+        input, select, textarea { width: 250px; margin-top: 5px; }
+        .error { border: 2px solid red; }
+        #success { color: green; font-weight: bold; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h2>Форма реєстрації</h2>
+    <form id="userForm">
+        <label>Ім'я:</label>
+        <input type="text" id="firstName">
+
+        <label>Прізвище:</label>
+        <input type="text" id="lastName">
+
+        <label>Email:</label>
+        <input type="email" id="email">
+
+        <label>Пароль:</label>
+        <input type="password" id="password">
+
+        <label>Дата народження:</label>
+        <input type="date" id="birthDate">
+
+        <label>Телефон:</label>
+        <input type="text" id="phone" placeholder="+380XXXXXXXXX">
+
+        <label>Країна:</label>
+        <select id="country">
+            <option value="Німеччина">Німеччина</option>
+            <option value="Україна">Україна</option>
+            <option value="Польща">Польща</option>
+        </select>
+
+        <label>Стать:</label>
+        <input type="radio" name="gender" value="Чоловік" checked> Чоловік
+        <input type="radio" name="gender" value="Жінка"> Жінка
+
+        <label>Навички:</label>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+
+        <label>Коментар:</label>
+        <textarea id="comment" rows="4"></textarea>
+
+        <label>
+            <input type="checkbox" id="agree"> Я погоджуюсь
+        </label>
+
+        <br><br>
+        <button type="button" id="submitBtn">Відправити</button>
+    </form>
+
+    <div id="success"></div>
+
+    <script src="./hw6.js"></script>
+</body>
+</html>

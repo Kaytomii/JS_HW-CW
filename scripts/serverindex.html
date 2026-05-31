@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./server.css">
+</head>
+<body>
+    <h1>Погода у місті</h1>
+
+    <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Введіть місто" required>
+        <button type="submit">Показати</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script type="module" src="./jsonserver.js"></script>
+</body>
+</html>
